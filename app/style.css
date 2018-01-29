@@ -1,0 +1,221 @@
+/***____Defaults____***/
+
+body {
+  margin: 0;
+  font-weight: normal;
+  font-family: 'Lato', sans-serif; 
+  }
+
+p {
+  line-height: 1.5rem;
+  letter-spacing: 0.04rem;
+  text-align: center; 
+  }
+
+.content__inner {
+  max-width: 2000px;
+  margin: 0 auto 60px; 
+  }
+
+button {
+  background-color: #524656;
+  color: white;
+  padding: 15px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #524656; 
+  }
+
+button:hover {
+  background-color: #3d3540;
+  border: 1px solid #3d3540; 
+  }
+
+button:focus {
+  outline: none !important; 
+  }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; 
+  }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 0 60px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; 
+  }
+
+.container__row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; 
+  }
+
+.container__reset {
+  padding: 0; 
+  }
+
+.container__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 20px; 
+  }
+
+.container h1 {
+  padding: 4rem 0 2rem 0; 
+  }
+
+.container h3 {
+  padding: 0 0 2rem 0;
+  font-weight: 500;
+  font-size: 1.25rem; 
+  }
+
+
+/***____Form____***/
+.hero {
+  text-transform: capitalize;
+}
+
+.hero h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 3rem;
+  margin: -10px 0 -10px 0;
+  text-align: center;
+  max-width: 800px;
+  line-height: 4.5rem; 
+  }
+
+.hero h4 {
+  color: white;
+  font-size: 1.8rem;
+  border-bottom: 2px solid white;
+  padding: 0px 0 0.8rem;
+  min-width: 450px;
+  text-align: center; 
+  }
+
+.container__form.hero {
+  background: #f9f8fb;
+  height: auto;
+  margin: 2rem 0 0 0; 
+  }
+
+.container__form.hero h1,
+.container__form.hero h4 {
+  color: #000000; 
+  }
+
+.container__form.hero h1 {
+  font-size: 1.25rem; 
+  }
+
+.container__form.hero h4 {
+  font-size: 1.25rem;
+  border: none; 
+  }
+
+.container__form.hero form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+   flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  }
+
+.container__form.hero input {
+  padding: 13px;
+  width: 80%;
+  margin: 20px 0 25px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  font-size: 0.95rem; 
+  }
+
+.container__form.hero input:focus {
+  outline: none !important;
+  border: 1px solid 524656;
+  -webkit-box-shadow: 0 0 10px #524656;
+  box-shadow: 0 0 10px #524656; 
+  }
+
+/***____Media Queries Small Screens____***/
+
+  @media only screen and (max-width: 48em) {
+    .container__row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; 
+      }
+      
+    .container {
+      margin: 0 0 1rem 0; 
+      }
+      
+    .container h3 {
+      text-align: center; 
+      }
+      
+    .container__price .container__inner,
+    .container__icon .container__inner {
+      margin: 0 0 3rem 0; 
+      }
+      
+    .container__people .container__inner {
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+      width: 100vw; 
+      }
+      
+    .container__people.container__people--1 {
+      margin: 0; 
+      }
+      
+    .hero h1 {
+      font-size: 2rem; 
+      }
+      
+    .container h3 {
+      font-size: 1.1rem; 
+      }
+}
